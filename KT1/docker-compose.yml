@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+
+  todo-server:
+    image: azobioz/todo-app:latest
+    container_name: todo-server
+    command: ["server"]
+    ports:
+      - "8080:8080"
+    restart: always
+
+  todo-client:
+    image: azobioz/todo-app:latest
+    container_name: todo-client
+    command: ["client"]
+    stdin_open: true
+    tty: true
+    depends_on:
+      - todo-server
