@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  user-api:
+    image: azobioz/user-api:latest
+    container_name: user-api
+    ports:
+      - "8080:8080"

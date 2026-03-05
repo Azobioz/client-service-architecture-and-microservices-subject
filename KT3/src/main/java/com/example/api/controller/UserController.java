@@ -1,7 +1,7 @@
-package com.example.app.controller;
+package com.example.api.controller;
 
-import com.example.app.dto.UserRequest;
-import com.example.app.model.User;
+import com.example.api.dto.UserRequest;
+import com.example.api.model.User;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
