@@ -3,4 +3,10 @@ plugins {
 }
 rootProject.name = 'client-service-architecture-and-microservices'
 
+include 'KT1'
 include 'KT3'
+include 'KT4'
+
+include 'KT6'
+include 'KT6:user-service'
+include 'KT6:order-service'
